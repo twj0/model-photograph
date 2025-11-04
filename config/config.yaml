@@ -1,0 +1,36 @@
+mesh_path: "mesh/model-stl.stl"
+output_path: "fig/model-stl.png"
+render:
+  window_size: [2400, 1800]  # high-res for print-quality downscaling
+  lighting_mode: "light kit"  # stable classic kit for academic figures
+  background:
+    bottom: "#ffffff"  # clean white
+    top: "#ffffff"
+  parallel_projection: true   # orthographic look for accurate geometry
+  eye_dome_lighting: true     # subtle depth perception without harsh shadows
+  anti_aliasing: "msaa"       # multisample anti-aliasing
+  image_scale: 2              # 2x supersampling for crisp edges
+  transparent_background: false
+  camera_position:
+    - [-2.6, -2.6, 1.8]  # south-west oblique, further back
+    - "center"
+    - [0, 0, 1]
+  camera_zoom: 1.0
+  lighting:
+    key_light:
+      position: [5, 5, 5]
+      intensity: 1.2
+      color: "#ffffff"
+    fill_light:
+      position: [-5, -5, 2]
+      intensity: 0.6
+      color: "#ffffff"
+  mesh:
+    color: "#d9d9d9"       # neutral grey for print
+    pbr: false             # reduce glossy artifacts in print
+    show_edges: true
+    edge_color: "#666666"
+    line_width: 1.0
+    smooth_shading: true
+  axes:
+    enabled: false         # set true if you want axes helper
