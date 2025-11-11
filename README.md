@@ -1,4 +1,5 @@
-# 模型渲染工具中文使用指南
+# 效果其实是不如CFD的软件，只是玩具而已
+预览[网格图片](https://telegraph.ttwwjj.ddns-ip.net/file/AgACAgUAAyEGAAShY8_eAAOYaRKWRQURkV9uQNypjpbpGfkmdC4AAvcLaxugfZFUOl2GqCPmkygBAAMCAAN3AAM2BA.png)
 
 ## 工具概览
 本工具依赖 `PyVista` 与 `meshio`，用于加载 `mesh/model-stl.stl` 等网格文件，输出科研风格的高质量截图，并支持实时交互预览。
@@ -22,17 +23,27 @@
 
 ## 快速开始
 ```bash
-# 1. 可选：激活虚拟环境（若存在）
+# 可选：激活虚拟环境（若存在）
 .venv\Scripts\Activate.ps1
-
-# 2. 生成静态截图
-python main.py
-
-# 3. 指定不同网格或输出目录
-python main.py --mesh path/to/mesh.stl --output fig/custom.png
-
-# 4. 进入交互模式
+```
+```python
+pip install -r requirements.txt
+```
+```uv
+# 如果使用uv: 使用uv 进行同步
+uv sync
+```
+```python
+# 进入交互模式
 python main.py --interactive
+```
+
+键盘点击**E**就可以导出图片
+
+
+```python
+# 指定不同网格或输出目录
+python main.py --mesh path/to/mesh.stl --output fig/custom.png
 ```
 
 ## 输出结果说明
@@ -43,6 +54,7 @@ python main.py --interactive
 - **鼠标左键拖动**：旋转模型。
 - **鼠标右键拖动**：平移视图。
 - **鼠标滚轮**：缩放。
+- **键盘 E **: 导出图片。
 关闭窗口即可退出交互模式，期间不会写入静态截图。
 
 ## 常见问题
