@@ -1,5 +1,5 @@
 # 效果其实是不如CFD的软件，只是玩具而已
-预览[网格图片](https://telegraph.ttwwjj.ddns-ip.net/file/AgACAgUAAyEGAAShY8_eAAOYaRKWRQURkV9uQNypjpbpGfkmdC4AAvcLaxugfZFUOl2GqCPmkygBAAMCAAN3AAM2BA.png)
+[网格图片](https://telegraph.ttwwjj.ddns-ip.net/file/AgACAgUAAyEGAAShY8_eAAOYaRKWRQURkV9uQNypjpbpGfkmdC4AAvcLaxugfZFUOl2GqCPmkygBAAMCAAN3AAM2BA.png)
 
 ## 工具概览
 本工具依赖 `PyVista` 与 `meshio`，用于加载 `mesh/model-stl.stl` 等网格文件，输出科研风格的高质量截图，并支持实时交互预览。
